@@ -1,0 +1,18 @@
+module Line;
+
+import <iostream>;
+
+Line::Line() {
+  std::cout << " creating default line " << std::endl;
+}
+
+Line::Line(Point a, Point b) : m_a(a), m_b(b) {
+  std::cout << " creating specific line " << std::endl;
+}
+
+void Line::print(){
+  std::cout << " point a " << a.getx() << " " << a.gety()
+	    << std::endl
+	    << " point b " << b.getx() << " " << b.gety()
+	    << std::endl;
+}
